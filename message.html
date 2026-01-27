@@ -53,3 +53,26 @@ h2 {
 
 </body>
 </html>
+<hr>
+
+<h3>💬 رد</h3>
+
+<input 
+  type="text" 
+  id="replyInput" 
+  placeholder="اكتب ردك هنا"
+  style="width:90%; padding:10px;"
+>
+
+<br><br>
+
+<button onclick="sendReply()">إرسال</button>
+
+<p id="replyResult"></p>
+
+<script>
+  function sendReply() {
+    var reply = document.getElementById("replyInput").value;
+    document.getElementById("replyResult").innerText = "الرد: " + reply;
+  }
+</script>
